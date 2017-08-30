@@ -1569,7 +1569,7 @@ setInterval(function () {
     //document.getElementById("news").innerHTML = newsArray[Math.round(Math.random() * (newsArray.length - 1))];
     ctx.clearRect(0, 0, c.width, c.height);
     ctx.font = "16px Typewriter";
-    ctx.fillText(newsText, initpos, 30);
+    ctx.fillText(newsText, initpos, 16);
     initpos -= 6;
     if (initpos < (newsText.length * 32 * -1)) {
         initpos = c.width;
@@ -1627,6 +1627,6 @@ init();
 
 function resize() {
     c.width = window.innerWidth;
-    c.height = 64;
+    c.height = 32;
 }
 resize();
